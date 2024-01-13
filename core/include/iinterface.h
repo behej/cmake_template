@@ -4,7 +4,7 @@
 class IInterface
 {
 public:
-    // IInterface();
+    IInterface() = default;
     virtual int getValue() const = 0;
 };
 

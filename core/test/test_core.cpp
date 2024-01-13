@@ -16,10 +16,12 @@ protected:
     MockInterface m_mockInterface;
 };
 
-TEST_F(TestCore, MethodBarDoesAbc)
+TEST_F(TestCore, test_getValue)
 {
-    EXPECT_CALL(m_mockInterface, getValue()).WillOnce(Return(3)).WillOnce(Return(10));
+    EXPECT_CALL(m_mockInterface, getValue())
+        .WillOnce(Return(3))
+        .WillOnce(Return(10));
 
-    EXPECT_EQ(m_Core.method1(5), 15);
-    EXPECT_EQ(m_Core.method1(5), 50);
+    EXPECT_EQ(m_Core.method1(5), 45);
+    EXPECT_EQ(m_Core.method1(5), 150);
 }
