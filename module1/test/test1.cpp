@@ -3,10 +3,6 @@
 
 TEST(sample, ref)
 {
-    ASSERT_EQ(function1(), 1);
-}
-
-TEST(sample, ref2)
-{
-    ASSERT_EQ(function1(), 1);
+    auto testedObject{Module1(3)};
+    EXPECT_EQ(testedObject.getValue(), 3);
 }

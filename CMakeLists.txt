@@ -21,7 +21,8 @@ FetchContent_Declare(
 # set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+add_subdirectory(core)
 add_subdirectory(module1)
 
 add_executable(MyProg main.cpp)
-target_link_libraries(MyProg PUBLIC module1)
+target_link_libraries(MyProg PUBLIC core module1)

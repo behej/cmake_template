@@ -1,6 +1,6 @@
 
 
-add_executable(test_module1  test1.cpp test2.cpp)
+add_executable(test_module1  test1.cpp)
 
 # target_include_directories(test_module1 PRIVATE  ${GTEST_INCLUDE_DIRS})
 

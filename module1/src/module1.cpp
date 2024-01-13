@@ -1,6 +1,10 @@
 #include "module1.h"
 
-int function1()
+Module1::Module1(int initValue) : IInterface(), m_value(initValue)
 {
-    return 1;
+}
+
+int Module1::getValue() const
+{
+    return m_value;
 }
