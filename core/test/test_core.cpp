@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 #include "core.h"
-#include "mockInterface.h"
+#include "mocks/mockInterface.h"
 
 using ::testing::Return;
 

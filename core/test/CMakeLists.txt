@@ -1,4 +1,4 @@
-add_executable(test_core test_core.cpp mockInterface.h)
+add_executable(test_core test_core.cpp mocks/mockInterface.h)
 
 target_link_libraries(test_core core GTest::gtest_main gmock_main)
 
