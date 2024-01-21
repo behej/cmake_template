@@ -1,6 +1,3 @@
-# add_subdirectory(src)
-
-
 set(core_src
     src/core.cpp
     src/core_details.cpp)

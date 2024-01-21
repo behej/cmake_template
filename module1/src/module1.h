@@ -10,7 +10,6 @@ public:
 
 private:
     int m_value;
-    /* data */
 };
 
 #endif // _MODULE1_H_
